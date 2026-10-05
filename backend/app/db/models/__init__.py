@@ -1,0 +1,1 @@
+from app.db.models.resume_analysis import ResumeAnalysis
