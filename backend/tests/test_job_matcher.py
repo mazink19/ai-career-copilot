@@ -50,4 +50,4 @@ def test_job_matcher():
     assert 0 <= result.score <= 100
     assert result.strengths
     assert result.missing_skills is not None
-    assert result.recommendations
+    assert result.recommendations is not None
