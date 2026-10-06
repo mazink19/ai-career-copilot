@@ -2,7 +2,7 @@ import LoginBrand from "../components/auth/LoginBrand";
 import LoginForm from "../components/auth/LoginForm";
 import type { LoginRequest } from "../types/auth";
 import type { LoginResponse } from "../types/auth";
-
+const API_URL = import.meta.env.VITE_API_URL;
 interface LoginProps {
   onLoginSuccess: (response: LoginResponse) => void;
   onSignupClick?: () => void;
@@ -15,7 +15,7 @@ export default function Login({
     credentials: LoginRequest
   ) {
     const response = await fetch(
-      "http://localhost:8000/auth/login",
+      `${API_URL}/auth/login`,
       {
         method: "POST",
         headers: {

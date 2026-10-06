@@ -2,7 +2,7 @@ import SignupBrand from "../components/auth/SignupBrand";
 import SignupForm, {
   type SignupData,
 } from "../components/auth/SignupForm";
-
+const API_URL = import.meta.env.VITE_API_URL;
 interface SignupProps {
   onSignupSuccess: () => void;
   onLoginClick: () => void;
@@ -14,7 +14,7 @@ function Signup({
 }: SignupProps) {
   async function handleSignup(data: SignupData) {
     const response = await fetch(
-      "http://localhost:8000/auth/register",
+      `${API_URL}/auth/register`,
       {
         method: "POST",
         headers: {
