@@ -30,6 +30,12 @@ Jobs are automatically collected from external job-board platforms and normalize
 
 ---
 
+## Application Demo
+
+![AI Career Copilot Demo](docs/assets/demo.gif)
+
+---
+
 ## Features
 
 ### Resume Analysis
